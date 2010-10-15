@@ -12,29 +12,51 @@ MDB2 PHP PEAR package, and also the Smarty templating engine.
 
 4) Install this application somewhere in your filesystem, like this:
 
-   /Users/al/Cato
+     /Users/al/Cato
    
 5) Modify your PATH to include our bin directory
 
-   PATH=/Users/al/Cato/bin:$PATH
+     PATH=/Users/al/Cato/bin:$PATH
 
 6) Create an alias to our db.php script to make it easier to run:
 
-   alias db=/Users/al/Cato/bin/db.php
+     alias db=/Users/al/Cato/bin/db.php
 
-7) Copy the 'example' directory somewhere you'd like to work in for
-   your application. For instance, if you're working on a project named
-   Foo in a directory named /Users/al/Projects/Foo, copy the examples
-   directory and rename it like this:
+7) Copy the 'example' directory to a location where you'd like to work
+   for your application. For instance, if you're working on a project 
+   named Foo, in a directory named /Users/al/Projects/Foo, you can
+   copy the 'examples' directory into that root directory and rename it
+   to 'cato', like this:
    
-   /Users/al/Projects/Foo/cato
+     /Users/al/Projects/Foo/cato
    
-8) Modify the app.config file to work for your application. The main thing
-   you need to configure are the database parameters. Everything after that
-   is technically optional, though I'm sure you'll want to customize things
-   for your project. You'll almost certainly want to modify the files in
-   the 'templates' directory to match your preferences.
+8) In this new 'cato' working directory, edit the app.config file to work 
+   for your application. The main thing you need to configure are the 
+   database parameters. Everything after that is technically optional, 
+   though I'm sure you'll want to customize things for your project. 
+   I recommend running some initial tests with Cato to make sure it's 
+   running properly, and once you confirm that it is, you'll want to edit
+   the template files to create the CRUD output you want.
+
+   To run a simple Cato test, try a command like this, assuming you have
+   a database table named 'users':
+
+     db gen model User
+
+   Or, if you have a database tables named 'peeps', you can run this command
+   instead:
+
+     db gen model User peeps
+
+   For more information on Cato commands, please see the README file.
+
+
+USING CATO:   
 
 If everything has gone well, congratulations, you should be ready to run 
-database CRUD commands, as shown in our README file.
+Cato database CRUD commands, as shown in the README file.
+
+
+
+
 
