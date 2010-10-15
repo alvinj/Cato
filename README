@@ -1,0 +1,41 @@
+This is the README file for Cato, a multi-language CRUD generator.
+
+USAGE:
+
+  If your database follows the normals Rails-like naming conventions you can 
+  invoke this script like this:
+
+    db gen model User
+
+  If you don't (or can't) follow that convention you can invoke this script
+  like this:
+
+    db gen model User peeps
+
+  where the generic invocations look like this:
+
+    db gen model [ClassName]
+    db gen model [ClassName] [table_name]
+
+  Actually, that's a bit of a fib to make this app look more like Rails ... the 
+  real invocations look like this:
+
+    db gen [template-name] [ClassName]
+    db gen [template-name] [ClassName] [table_name]
+
+  The reason the earlier invocations work is that it's standard to have 
+  templates named model.tpl, view.tpl, and controller.tpl, but in fact you can 
+  have templates with all sorts of names:
+
+    model.tpl
+    view.tpl
+    controller.tpl
+    applicationContext.tpl
+    hibernate.tpl
+    whatever-you-want.tpl
+
+MORE INFORMATION:
+
+  For more information please visit http://devdaily.com, or contact Alvin Alexander
+  at http://devdaily.com/contact.
+

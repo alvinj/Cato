@@ -1,0 +1,40 @@
+INSTALLATION:
+
+To install Cato just follow these steps. Note that Cato depends on the
+MDB2 PHP PEAR package, and also the Smarty templating engine.
+
+1) If you don't already have PHP installed, install it.
+
+2) Install the PHP PEAR package MDB2. This is needed for database access.
+
+3) Install the Smarty templating software (http://www.smarty.net/).
+   Smarty is used for all template processing.
+
+4) Install this application somewhere in your filesystem, like this:
+
+   /Users/al/Cato
+   
+5) Modify your PATH to include our bin directory
+
+   PATH=/Users/al/Cato/bin:$PATH
+
+6) Create an alias to our db.php script to make it easier to run:
+
+   alias db=/Users/al/Cato/bin/db.php
+
+7) Copy the 'example' directory somewhere you'd like to work in for
+   your application. For instance, if you're working on a project named
+   Foo in a directory named /Users/al/Projects/Foo, copy the examples
+   directory and rename it like this:
+   
+   /Users/al/Projects/Foo/cato
+   
+8) Modify the app.config file to work for your application. The main thing
+   you need to configure are the database parameters. Everything after that
+   is technically optional, though I'm sure you'll want to customize things
+   for your project. You'll almost certainly want to modify the files in
+   the 'templates' directory to match your preferences.
+
+If everything has gone well, congratulations, you should be ready to run 
+database CRUD commands, as shown in our README file.
+

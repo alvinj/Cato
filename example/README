@@ -1,0 +1,26 @@
+The Cato "example" Directory
+
+This directory contains the files needed to configure Cato to
+access your database and generate CRUD files based on your table
+definitions.
+
+---++ Template Files
+
+The template files used to generate the CRUD are located in this
+subdirectory:
+
+  templates
+
+If you haven't already done so, you'll want to configure Cato
+so you can use it. Please see the Cato INSTALL document for 
+more information on that process, and see the Cato README
+document for information on how to use Cato.
+
+---++ Configuring Cato
+
+If you haven't already done so, you'll want to configure your
+shell so it can find Cato, something like this:
+
+  PATH=/Users/al/bin/cato:$PATH
+  alias db=/Users/al/bin/cato/db.php
+

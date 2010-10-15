@@ -1,0 +1,25 @@
+---++ Main TO-DO Items
+
+* create INSTALL, README, USAGE docs
+* add project to Github
+* move db.php to bin directory
+* still need a 'Controller' template example
+* still need a 'Dao' object
+* need to get rid of "<?php" output in crud output
+
+---++ Templates needed
+
+* JSF
+* Struts
+* Swing
+* PHP
+
+---++ Other
+
+* give the user a way to skip the 'id' field in the output
+* figure out the best Smarty delimiters i can use/suggest
+
+have workarounds for:
+
+* need an array of getter method names, possibly an array of setter method names
+
